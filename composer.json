@@ -1,0 +1,37 @@
+{
+    "name": "phptool/phptool",
+    "description": "PHP refactoring tool",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^3.1",
+        "nikic/php-parser": "^2.1",
+        "doctrine/dbal": "^2.5",
+        "phpbench/container": "@dev",
+        "symfony/finder": "^3.1",
+        "tcopestake/php-parser-psr-2-pretty-printer": "dev-release"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "DTL\\PhpTool\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DTL\\PhpTool\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
